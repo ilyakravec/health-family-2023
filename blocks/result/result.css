@@ -1,0 +1,87 @@
+@import "../../styles/main.css";
+.results__title {
+  font-size: 30px;
+  line-height: 39.6px;
+  font-weight: 400;
+  font-family: "Arsenal", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.results__text {
+  line-height: 26.4px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 980px;
+}
+.results__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 20px;
+  margin-bottom: 40px;
+}
+.results__grid__item {
+  box-shadow: 0 2px 4px rgba(51, 50, 48, 0.1);
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding: 16px;
+  color: #7c6757;
+}
+.results__grid__item__about__text {
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20.3px;
+}
+.results__grid__item__about__date {
+  font-size: 14px;
+  line-height: 20.3px;
+}
+.results__grid__item img {
+  display: block;
+  width: 100%;
+  min-width: 72px;
+  margin-bottom: 16px;
+}
+.results__grid__item__about__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.results__grid__item__about__inner__link {
+  display: inline-block;
+  color: #7c6757;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22.5px;
+  border-bottom: 1px solid rgba(124, 103, 87, 0.2);
+}
+
+@media (max-width: 1200px) {
+  .results__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .results__grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .results__title {
+    font-size: 24px;
+    line-height: 31.08px;
+    font-weight: 400;
+    font-family: "Arsenal", sans-serif;
+    text-transform: uppercase;
+  }
+  .results__grid__item {
+    flex-direction: column;
+  }
+  .results__grid__item img {
+    max-width: 56.5px;
+  }
+}/*# sourceMappingURL=result.css.map */

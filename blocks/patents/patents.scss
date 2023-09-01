@@ -1,0 +1,71 @@
+@import "../../styles/variables.scss";
+@import "../../styles/main.scss";
+
+.patents {
+    margin-bottom: 100px;
+
+    &__title {
+        @include h1;
+        margin-bottom: 24px;
+    }
+
+    &__slider {
+        display: flex;
+        column-gap: 20px;
+        position: relative;
+
+        &__btn {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            @include shadow;
+            border-radius: 50%;
+            top: 30%;
+            right: -15px;
+            transform: translateY(-30%);
+            z-index: 10000;
+
+
+            &__img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+
+        &__item {
+            @include shadow;
+            padding: 16px;
+            min-width: 180px;
+            border-bottom: 2px solid rgba(51, 50, 48, 0.1);
+
+            &__date {
+                font-weight: 600;
+                font-family: $secondary-font;
+                color: $secondary;
+                margin-bottom: 16px;
+            }
+
+            &__link {
+                @include link;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    .patents__slider__btn {
+        display: none;
+    }
+
+}
+
+@media (max-width:576px) {
+    .patents__title {
+        @include h1-small-size;
+    }
+}

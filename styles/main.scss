@@ -1,0 +1,31 @@
+@import "./normalizer.scss";
+@import "./variables.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Montserrat+Alternates:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Onest';
+    src: url(../assets/fonts/OnestMedium1602-hint.ttf) format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url(../fonts/OnestRegular1602-hint.ttf) format('woff');
+    font-weight: 400;
+}
+
+body {
+    font-family: "Onest", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26.4px;
+    color: $main;
+}
+
+.container {
+    width: 100%;
+    max-width: 1210px;
+    padding: 0 15px;
+    margin: 0 auto;
+}

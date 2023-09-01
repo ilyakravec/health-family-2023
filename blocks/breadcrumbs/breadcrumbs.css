@@ -1,0 +1,27 @@
+@import "../../styles/main.css";
+.breadcrumbs {
+  margin: 32px 0 24px;
+}
+.breadcrumbs__inner {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  overflow: hidden;
+}
+.breadcrumbs__inner__item {
+  transition: transform 0.3s ease;
+  white-space: nowrap;
+  color: #817b77;
+  position: relative;
+}
+.breadcrumbs__inner__item:last-child {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slash {
+  color: #817b77;
+}/*# sourceMappingURL=breadcrumbs.css.map */
