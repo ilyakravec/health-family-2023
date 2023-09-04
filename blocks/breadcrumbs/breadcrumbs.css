@@ -4,16 +4,19 @@
 .breadcrumbs__inner {
   width: 100%;
   display: flex;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
+  gap: 8px;
+  overflow: hidden;
 }
 .breadcrumbs__inner__item {
   white-space: nowrap;
   color: #817b77;
-  overflow: hidden;
 }
 .breadcrumbs__inner__item:hover {
   color: #817b77;
+}
+.breadcrumbs__inner__item:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .breadcrumbs__inner__item:not(:first-child):before {
   content: "/";

@@ -6,15 +6,22 @@
     &__inner {
         width: 100%;
         display: flex;
-        column-gap: 15px;
+        gap: 8px;
+        overflow: hidden;
 
         &__item {
             white-space: nowrap;
             color: $gray;
-            overflow: hidden;
+
 
             &:hover {
                 color: $gray;
+            }
+
+            &:last-child {
+                overflow: hidden;
+                text-overflow: ellipsis;
+
             }
 
             &:not(:first-child):before {
