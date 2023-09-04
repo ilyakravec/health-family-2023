@@ -5,33 +5,23 @@
 
     &__inner {
         width: 100%;
-        overflow: hidden;
         display: flex;
         column-gap: 15px;
 
-        overflow: hidden;
-
-
-
         &__item {
-            transition: transform 0.3s ease;
             white-space: nowrap;
             color: $gray;
-            position: relative;
 
-            &:last-child {
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
+            &:hover {
+                color: $gray;
+            }
+
+            &:not(:first-child):before {
+                content: "/";
+                display: inline-block;
+                margin-right: 8px;
             }
 
         }
     }
 }
-
-.slash {
-    color: #817b77;
-}
-
-
-@import "../../styles/main.css";
