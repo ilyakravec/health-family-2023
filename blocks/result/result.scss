@@ -58,6 +58,10 @@
 
                 &__link {
                     @include link;
+
+                    &:hover {
+                        color: $secondary;
+                    }
                 }
             }
         }
@@ -89,4 +93,9 @@
             max-width: 56.5px;
         }
     }
+}
+
+p {
+    margin-bottom: 0px;
+
 }

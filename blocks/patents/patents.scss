@@ -50,6 +50,10 @@
 
             &__link {
                 @include link;
+
+                &:hover {
+                    color: $gray;
+                }
             }
         }
     }

@@ -58,6 +58,9 @@
   line-height: 22.5px;
   border-bottom: 1px solid rgba(124, 103, 87, 0.2);
 }
+.results__grid__item__about__inner__link:hover {
+  color: #7c6757;
+}
 
 @media (max-width: 1200px) {
   .results__grid {
@@ -83,4 +86,7 @@
   .results__grid__item img {
     max-width: 56.5px;
   }
+}
+p {
+  margin-bottom: 0px;
 }/*# sourceMappingURL=result.css.map */
