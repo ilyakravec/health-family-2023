@@ -124,13 +124,6 @@ body {
   color: #333;
 }
 
-.container {
-  width: 100%;
-  max-width: 1210px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .patents {
   margin-bottom: 100px;
 }
