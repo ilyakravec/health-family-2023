@@ -10,6 +10,7 @@
 .breadcrumbs__inner__item {
   white-space: nowrap;
   color: #817b77;
+  overflow: hidden;
 }
 .breadcrumbs__inner__item:hover {
   color: #817b77;
