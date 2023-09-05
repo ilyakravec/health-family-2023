@@ -17,7 +17,7 @@
             position: absolute;
             width: 48px;
             height: 48px;
-            @include shadow;
+            @include main-shadow;
             border-radius: 50%;
             top: 30%;
             right: -15px;
@@ -36,7 +36,7 @@
         }
 
         &__item {
-            @include shadow;
+            @include main-shadow;
             padding: 16px;
             min-width: 180px;
             border-bottom: 2px solid rgba(51, 50, 48, 0.1);
@@ -44,7 +44,7 @@
             &__date {
                 font-weight: 600;
                 font-family: $secondary-font;
-                color: $secondary;
+                color: $brand-color-dark;
                 margin-bottom: 16px;
             }
 
@@ -52,7 +52,7 @@
                 @include link;
 
                 &:hover {
-                    color: $gray;
+                    color: $brand-color-dark-2;
                 }
             }
         }
